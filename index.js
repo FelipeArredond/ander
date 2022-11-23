@@ -5,6 +5,8 @@ const quienesSomos = document.getElementById('quienesSomos');
 const acercaDe = document.getElementById('acercaDe');
 const procesoNav = document.getElementById('procesoNav');
 const proceso = document.getElementById('proceso');
+const serviciosNav = document.getElementById('serviciosNav');
+const servicios = document.getElementById('servicios');
 
 bars.addEventListener('click', () => {
     if (options.style.display == 'none') {
@@ -20,4 +22,8 @@ quienesSomos.addEventListener('click', () => {
 
 procesoNav.addEventListener('click', () => {
     proceso.scrollIntoView({ behavior: "smooth" })
+})
+
+serviciosNav.addEventListener('click', () => {
+    servicios.scrollIntoView({ behavior: "smooth" })
 })

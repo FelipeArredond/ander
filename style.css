@@ -133,7 +133,45 @@ li {
 }
 
 .servicios {
+    text-align: start;
+    border: solid 2px whitesmoke;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 150px;
+    padding: 40px;
+}
+
+.servicios h3 {
+    color: whitesmoke;
+    font-size: 50px;
+}
+
+.servicios p {
     color: white;
+    width: 100%;
+    font-size: 30px;
+    text-align: start;
+}
+
+.servicios img {
+    width: 20%;
+    border-radius: 60%;
+}
+
+.serv1 div {
+    display: flex;
+    align-items: center;
+}
+
+.serv2 div {
+    display: flex;
+    align-items: center;
+}
+
+.serv3 div {
+    display: flex;
+    align-items: center;
 }
 
 .testimonios {
