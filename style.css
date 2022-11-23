@@ -28,7 +28,7 @@ nav .nav-bar li {
 
 nav .nav-bar li:hover {
     text-shadow: 0 10px 15px white;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
     cursor: pointer;
 }
 
@@ -79,6 +79,7 @@ li {
     border-radius: 20px;
     width: 90%;
     margin: auto;
+    margin-top: 300px;
     padding: 40px;
 }
 
@@ -96,6 +97,55 @@ li {
 
 .acercaDe img {
     margin-top: 50px;
+}
+
+.proceso {
+    text-align: start;
+    border: solid 2px whitesmoke;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 150px;
+    padding: 40px;
+}
+
+.proceso h2 {
+    color: whitesmoke;
+    font-size: 50px;
+}
+
+.textProceso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textProceso img {
+    width: 50%;
+    border-radius: 20px;
+}
+
+.proceso p {
+    width: 100%;
+    text-align: start;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.servicios {
+    color: white;
+}
+
+.testimonios {
+    color: white;
+}
+
+.contactos {
+    color: white;
+}
+
+.politicas {
+    color: white;
 }
 
 
