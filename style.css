@@ -267,6 +267,10 @@ li {
     font-size: 50px;
 }
 
+.contactos a {
+    color: white;
+}
+
 .politicas {
     color: white;
 }
