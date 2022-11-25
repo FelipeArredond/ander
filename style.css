@@ -217,6 +217,11 @@ li {
     border-radius: 25px;
     border: solid 2px white;
     padding: 5px;
+    transition: 1s;
+}
+
+.videos video:hover {
+    width: 280px;
 }
 
 .contactos {
