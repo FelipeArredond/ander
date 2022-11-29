@@ -4,6 +4,208 @@
     font-family: 'Spectral SC', serif;
 }
 
+
+/* FLAME#####################################################################################################################*/
+
+.flames {
+    display: flex;
+}
+
+.container {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    transform-origin: center bottom;
+    animation-name: flicker;
+    animation-duration: 3ms;
+    animation-delay: 200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.flame {
+    bottom: 0;
+    position: absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform: rotate(-45deg) scale(1.5, 1.5);
+}
+
+.yellow {
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+}
+
+.orange {
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background: orange;
+    box-shadow: 0px 0px 9px 4px orange;
+}
+
+.red {
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    background: OrangeRed;
+    box-shadow: 0px 0px 5px 4px OrangeRed;
+}
+
+.white {
+    left: 15px;
+    bottom: -4px;
+    width: 30px;
+    height: 30px;
+    background: white;
+    box-shadow: 0px 0px 9px 4px white;
+}
+
+.circle {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.blue {
+    width: 10px;
+    height: 10px;
+    left: 25px;
+    bottom: -25px;
+    background: SlateBlue;
+    box-shadow: 0px 0px 15px 10px SlateBlue;
+}
+
+.black {
+    width: 40px;
+    height: 40px;
+    left: 10px;
+    bottom: -60px;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+}
+
+@keyframes flicker {
+    0% {
+        transform: rotate(-1deg);
+    }
+    20% {
+        transform: rotate(1deg);
+    }
+    40% {
+        transform: rotate(-1deg);
+    }
+    60% {
+        transform: rotate(1deg) scaleY(1.04);
+    }
+    80% {
+        transform: rotate(-2deg) scaleY(0.92);
+    }
+    100% {
+        transform: rotate(1deg);
+    }
+}
+
+
+/* END FLAME#####################################################################################################################*/
+
+
+/* WHATSAPP BUTTON */
+
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    min-width: 300px;
+    min-height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79, 209, 197, .64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+}
+
+button::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #00FFCB;
+    box-shadow: 0 0 60px rgba(0, 255, 203, .64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.button:hover,
+.button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+}
+
+button:hover::before,
+button:focus::before {
+    opacity: 1;
+}
+
+button::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+button:hover::after,
+button:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+
+/* WHATSAPP BUTTON END */
+
 a {
     text-decoration: none;
     color: white;
@@ -14,7 +216,7 @@ body {
 }
 
 .fa-square-whatsapp {
-    color: green;
+    color: #4FD1C5;
     font-size: 100px;
     position: fixed;
     margin-top: 500px;
@@ -24,7 +226,7 @@ body {
 
 .fa-square-whatsapp:hover {
     font-size: 120px;
-    color: greenyellow;
+    color: #4FD1C5;
     transition: 1s;
 }
 
@@ -34,7 +236,7 @@ nav .nav-bar {
     align-items: center;
     font-size: 25px;
     background-color: black;
-    box-shadow: 0 1px 100px whitesmoke;
+    box-shadow: 0 1px 100px orangered;
     width: 100%;
     height: 80px;
     transition: 2s;
@@ -47,7 +249,7 @@ nav .nav-bar li {
 }
 
 nav .nav-bar li:hover {
-    text-shadow: 0 10px 15px white;
+    text-shadow: 0 10px 15px orangered;
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
@@ -75,6 +277,7 @@ li {
 }
 
 .mainTextBlocks .rightBlockMain {
+    display: flex;
     width: 50%;
     height: 500px;
 }
@@ -96,6 +299,7 @@ li {
 .acercaDe {
     text-align: center;
     border: solid 2px whitesmoke;
+    box-shadow: 0 0 24px orangered;
     border-radius: 20px;
     width: 90%;
     margin: auto;
@@ -122,6 +326,7 @@ li {
 .proceso {
     text-align: start;
     border: solid 2px whitesmoke;
+    box-shadow: 0 0 24px orangered;
     border-radius: 20px;
     width: 90%;
     margin: auto;
@@ -155,6 +360,7 @@ li {
 .servicios {
     text-align: start;
     border: solid 2px whitesmoke;
+    box-shadow: 0 0 24px orangered;
     border-radius: 20px;
     width: 90%;
     margin: auto;
@@ -192,6 +398,7 @@ li {
     text-align: start;
     border: solid 2px whitesmoke;
     border-radius: 20px;
+    box-shadow: 0 0 24px orangered;
     width: 90%;
     margin: auto;
     margin-top: 150px;
@@ -214,20 +421,22 @@ li {
     width: 250px;
     margin: auto;
     border-radius: 25px;
-    border: solid 2px white;
     padding: 5px;
     transition: 1s;
 }
 
 .videos video:hover {
     width: 280px;
-    box-shadow: 1px 10px 10px white;
+    box-shadow: 0 0 24px orangered;
 }
 
 .contactos {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border-radius: 20px;
-    width: 90%;
+    width: 40%;
     margin: auto;
     margin-top: 150px;
     padding: 40px;
@@ -236,22 +445,6 @@ li {
 
 .contactos h1 {
     font-size: 50px;
-}
-
-.contactos div {
-    border: solid 2px white;
-    width: 30%;
-    margin: auto;
-    margin-top: 90px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.contactos div:hover {
-    background-color: green;
-    color: black;
-    border-color: black;
 }
 
 .contactos p {
@@ -265,6 +458,10 @@ li {
 
 .contactos a p {
     color: white;
+}
+
+.callButton {
+    margin-top: 40px;
 }
 
 .callButton p:hover {
@@ -329,7 +526,7 @@ li {
         text-align: center;
         border-radius: 20px;
         width: 90%;
-        margin: auto;
+        margin: -320px auto;
         padding: 10px;
     }
     .acercaDe h2 {
@@ -354,6 +551,7 @@ li {
     .proceso {
         width: 90%;
         padding: 10px;
+        margin-top: 380px;
     }
     .proceso h2 {
         font-size: 40px;

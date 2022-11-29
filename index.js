@@ -9,6 +9,8 @@ const serviciosNav = document.getElementById('serviciosNav');
 const servicios = document.getElementById('servicios');
 const testimoniosNav = document.getElementById('testimoniosNav');
 const testimonios = document.getElementById('testimonios');
+const contactos = document.getElementById('contactos');
+const contactosNav = document.getElementById('contactosNav')
 
 bars.addEventListener('click', () => {
     if (options.style.display == 'none') {
@@ -32,4 +34,8 @@ serviciosNav.addEventListener('click', () => {
 
 testimoniosNav.addEventListener('click', () => {
     testimonios.scrollIntoView({ behavior: "smooth" });
+})
+
+contactosNav.addEventListener('click', () => {
+    contactos.scrollIntoView({ behavior: 'smooth' })
 })
