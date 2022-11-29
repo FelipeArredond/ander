@@ -330,11 +330,11 @@ li {
         border-radius: 20px;
         width: 90%;
         margin: auto;
-        padding: 15px;
+        padding: 10px;
     }
     .acercaDe h2 {
         color: whitesmoke;
-        font-size: 30px;
+        font-size: 40px;
     }
     .acercaDe p {
         width: 100%;
@@ -344,5 +344,72 @@ li {
     }
     .acercaDe img {
         margin-top: 50px;
+    }
+    .videos {
+        flex-direction: column;
+    }
+    .rightBlockMain {
+        display: none;
+    }
+    .proceso {
+        width: 90%;
+        padding: 10px;
+    }
+    .proceso h2 {
+        font-size: 40px;
+    }
+    .proceso p {
+        font-size: 20px;
+    }
+    .proceso .textProceso {
+        flex-direction: column;
+    }
+    .servicios {
+        width: 90%;
+        padding: 10px;
+    }
+    .servicios h3 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    .servicios p {
+        font-size: 15px;
+    }
+    .serv div {
+        flex-direction: column;
+    }
+    .serv img {
+        width: 50%;
+        border: none;
+        margin-bottom: 10px;
+    }
+    .testimonios {
+        width: 70%;
+    }
+    .videos video {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .contactos h1 {
+        font-size: 30px;
+    }
+    .contactos {
+        padding: 10px;
+    }
+    .contactos div {
+        width: 50%;
+    }
+    .contactos i {
+        font-size: 30px;
+    }
+    .contactos p {
+        font-size: 30px;
+    }
+    .politicas {
+        padding: 10px;
+    }
+    .politicas p {
+        font-size: 10px;
+        text-align: center;
     }
 }
