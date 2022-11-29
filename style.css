@@ -37,24 +37,24 @@
     left: 15px;
     width: 30px;
     height: 30px;
-    background: gold;
-    box-shadow: 0px 0px 9px 4px gold;
+    background: hsl(174, 50%, 39%);
+    box-shadow: 0px 0px 9px 4px hsl(174, 50%, 39%);
 }
 
 .orange {
     left: 10px;
     width: 40px;
     height: 40px;
-    background: orange;
-    box-shadow: 0px 0px 9px 4px orange;
+    background: #4FD1C5;
+    box-shadow: 0px 0px 9px 4px #4FD1C5;
 }
 
 .red {
     left: 5px;
     width: 50px;
     height: 50px;
-    background: OrangeRed;
-    box-shadow: 0px 0px 5px 4px OrangeRed;
+    background: hsl(173, 45%, 20%);
+    box-shadow: 0px 0px 5px 4px hsl(173, 45%, 20%);
 }
 
 .white {
@@ -76,8 +76,8 @@
     height: 10px;
     left: 25px;
     bottom: -25px;
-    background: SlateBlue;
-    box-shadow: 0px 0px 15px 10px SlateBlue;
+    background: #4FD1C5;
+    box-shadow: 0px 0px 15px 10px #4FD1C5;
 }
 
 .black {
@@ -236,7 +236,7 @@ nav .nav-bar {
     align-items: center;
     font-size: 25px;
     background-color: black;
-    box-shadow: 0 1px 100px orangered;
+    box-shadow: 0 1px 100px #4FD1C5;
     width: 100%;
     height: 80px;
     transition: 2s;
@@ -249,7 +249,7 @@ nav .nav-bar li {
 }
 
 nav .nav-bar li:hover {
-    text-shadow: 0 10px 15px orangered;
+    text-shadow: 0 10px 15px #4FD1C5;
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
@@ -282,6 +282,10 @@ li {
     height: 500px;
 }
 
+.rightBlockMain {
+    margin-top: 200px;
+}
+
 .rightBlockMain img {
     position: relative;
     overflow: hidden;
@@ -299,11 +303,11 @@ li {
 .acercaDe {
     text-align: center;
     border: solid 2px whitesmoke;
-    box-shadow: 0 0 24px orangered;
+    box-shadow: 0 0 24px 10px #4FD1C5;
     border-radius: 20px;
     width: 90%;
     margin: auto;
-    margin-top: 300px;
+    margin-top: 200px;
     padding: 40px;
 }
 
@@ -326,7 +330,7 @@ li {
 .proceso {
     text-align: start;
     border: solid 2px whitesmoke;
-    box-shadow: 0 0 24px orangered;
+    box-shadow: 0 0 24px 10px #4FD1C5;
     border-radius: 20px;
     width: 90%;
     margin: auto;
@@ -360,7 +364,7 @@ li {
 .servicios {
     text-align: start;
     border: solid 2px whitesmoke;
-    box-shadow: 0 0 24px orangered;
+    box-shadow: 0 0 24px 10px #4FD1C5;
     border-radius: 20px;
     width: 90%;
     margin: auto;
@@ -398,7 +402,7 @@ li {
     text-align: start;
     border: solid 2px whitesmoke;
     border-radius: 20px;
-    box-shadow: 0 0 24px orangered;
+    box-shadow: 0 0 24px 10px #4FD1C5;
     width: 90%;
     margin: auto;
     margin-top: 150px;
@@ -427,7 +431,7 @@ li {
 
 .videos video:hover {
     width: 280px;
-    box-shadow: 0 0 24px orangered;
+    box-shadow: 0 0 24px #4FD1C5;
 }
 
 .contactos {
